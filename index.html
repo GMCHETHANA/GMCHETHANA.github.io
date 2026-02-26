@@ -1,60 +1,169 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chethana Govindaswamy Mani | DevOps & Cloud Engineer</title>
+  <title>Chethana Govindaswamy Mani | DevOps Engineer</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
-      line-height: 1.6;
       padding: 0 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #222;
     }
-    h1 { margin-bottom: 5px; }
-    h2 { margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
-    a { color: #0366d6; text-decoration: none; }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 50px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      margin-top: 25px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 8px 15px;
+      background: #0366d6;
+      color: white;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background: #024ea2;
+    }
   </style>
 </head>
+
 <body>
 
-<h1>GM Chethana</h1>
-<p><strong>DevOps & Cloud Engineering</strong></p>
+<h1>Chethana Govindaswamy Mani</h1>
+<p><strong>DevOps Engineer | Kubernetes | GitOps | CI/CD | Cloud Infrastructure</strong></p>
 
-<h2>About Me</h2>
 <p>
-Master’s student specializing in Kubernetes, GitOps workflows, and secure CI/CD pipelines.
-Focused on building scalable, automated, and security-driven cloud systems.
+DevOps-focused engineer with hands-on experience in CI/CD automation, Infrastructure as Code, Kubernetes, and GitOps workflows across AWS and Azure. Strong Linux and cloud-native foundation with a passion for automation, security-first deployments, and reliable cloud systems.
+</p>
+
+<p>
+<a href="https://github.com/GMCHETHANA" target="_blank">GitHub</a> |
+<a href="https://www.linkedin.com/in/chethana-govindaswamy-mani-5b6450163" target="_blank">LinkedIn</a> |
+<a href="mailto:g.m.chethana97@gmail.com">Email</a>
 </p>
 
 <h2>Projects</h2>
 
-<h3>Zero-Trust DevSecOps Pipeline</h3>
+<div class="card">
+<h3>Multi-Environment Kubernetes GitOps Platform (AWS EKS)</h3>
 <ul>
-  <li>Designed secure CI/CD workflows</li>
-  <li>Implemented identity-based access control</li>
-  <li>Integrated automated security scanning</li>
+  <li>Provisioned AWS EKS infrastructure using Terraform (Infrastructure as Code)</li>
+  <li>Implemented GitOps-based Kubernetes deployments using Argo CD and Kustomize</li>
+  <li>Designed multi-environment configuration management ensuring deployment consistency</li>
 </ul>
-<p><strong>Tech:</strong> Kubernetes, Docker, GitHub Actions</p>
+<p><strong>Tech:</strong> AWS EKS, Terraform, Argo CD, Kubernetes, GitOps</p>
+<a class="button" href="https://github.com/GMCHETHANA" target="_blank">View Project</a>
+</div>
 
-<h3>Multi-Environment Kubernetes GitOps</h3>
+<div class="card">
+<h3>Cost-Optimized Kubernetes Auto-Scaling System</h3>
 <ul>
-  <li>Built GitOps-based deployment architecture</li>
-  <li>Automated environment configuration management</li>
-  <li>Reduced deployment inconsistencies</li>
+  <li>Simulated AWS-like architecture locally using Docker & Kubernetes (Kind)</li>
+  <li>Implemented intelligent auto-scaling based on CPU, memory, traffic, and time-based thresholds</li>
+  <li>Integrated HPA and CronJobs to optimize resource utilization and cost efficiency</li>
 </ul>
+<p><strong>Tech:</strong> Kubernetes, Docker, HPA, CronJobs, Cloud Cost Modeling</p>
+<a class="button" href="https://github.com/GMCHETHANA" target="_blank">View Project</a>
+</div>
 
-<h2>Skills</h2>
-<p><strong>Cloud & DevOps:</strong> Kubernetes, Docker, Terraform, GitHub Actions</p>
-<p><strong>Programming:</strong> Python, Bash</p>
+<div class="card">
+<h3>Zero-Trust DevSecOps Pipeline on Kubernetes</h3>
+<ul>
+  <li>Built a Kubernetes-native DevSecOps pipeline with vulnerability scanning</li>
+  <li>Integrated Trivy for container security scanning</li>
+  <li>Implemented OPA Gatekeeper policies to block non-compliant workloads</li>
+</ul>
+<p><strong>Tech:</strong> Kubernetes, Trivy, OPA Gatekeeper, CI/CD</p>
+<a class="button" href="https://github.com/GMCHETHANA" target="_blank">View Project</a>
+</div>
 
-<h2>Contact</h2>
-<p>Email: g.m.chethana97@gmail.com</p>
-<p>
-<a href="https://github.com/GMCHETHANA">GitHub</a> |
-<a href="https://linkedin.com/in/your-linkedin">LinkedIn</a>
-</p>
+<h2>Technical Skills</h2>
+
+<div class="section">
+<p><strong>CI/CD & GitOps:</strong> GitHub Actions, GitLab CI, Argo CD, Git-based workflows</p>
+<p><strong>Cloud & Infrastructure as Code:</strong> AWS (EKS, ECR, IAM, VPC), Azure (AKS), Terraform, Terragrunt</p>
+<p><strong>Containers & Orchestration:</strong> Docker, Kubernetes, Helm</p>
+<p><strong>Observability & Security:</strong> Trivy, Prometheus (basic), Grafana (basic)</p>
+<p><strong>OS & Scripting:</strong> Linux, Bash, Shell scripting</p>
+<p><strong>Programming:</strong> Java, Python (basic), SQL, REST APIs</p>
+</div>
+
+<h2>Professional Experience</h2>
+
+<div class="card">
+<h3>Associate – AmberStudent (Mar 2023 – Jul 2023)</h3>
+<ul>
+  <li>Identified automation opportunities in Linux-based workflows</li>
+  <li>Reduced manual intervention in recurring support operations</li>
+  <li>Improved incident documentation and cross-team knowledge sharing</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Associate Software Engineer – Test Yantra (Mar 2022 – Feb 2023)</h3>
+<ul>
+  <li>Developed Java backend services integrated with CI-ready Git workflows</li>
+  <li>Supported build and deployment configurations in Agile environments</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>SAP Consultant – BEML (Feb 2021 – Feb 2022)</h3>
+<ul>
+  <li>Automated SAP integration workflows using Java</li>
+  <li>Supported integration testing and production release readiness</li>
+</ul>
+</div>
+
+<h2>Education</h2>
+
+<p><strong>Master of Digital Innovations and Research</strong><br>
+Fachhochschule St. Pölten, Austria (2023 – 2025)</p>
+
+<p><strong>Bachelor of Computer Science Engineering</strong><br>
+Visvesvaraya Technological University, India (2015 – 2019)</p>
+
+<h2>Languages</h2>
+<p>English – C2 | German – B2</p>
 
 </body>
 </html>
