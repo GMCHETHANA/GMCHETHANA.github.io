@@ -3,217 +3,222 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chethana Govindaswamy Mani | Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Chethana Govindaswamy Mani | DevOps Engineer</title>
 
 <style>
 body {
-    font-family: 'Inter', sans-serif;
-    background: #f6f8fa;
     margin: 0;
-    color: #24292e;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
 }
 
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-.header {
+/* NAVBAR */
+nav {
     display: flex;
-    align-items: center;
-    gap: 25px;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
 }
 
-.header img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.header-text h1 {
-    margin: 0;
-    font-size: 28px;
-}
-
-.header-text h2 {
-    margin: 5px 0;
-    font-weight: 400;
-    color: #586069;
-    font-size: 18px;
-}
-
-.username {
-    color: #0366d6;
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
     font-weight: 500;
 }
 
-.bio {
-    margin-top: 20px;
-    font-size: 15px;
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 60px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.hero-text {
+    max-width: 55%;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
     line-height: 1.6;
 }
 
-.quick-info {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #586069;
+.hero-buttons a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+    padding: 10px 18px;
+    background: #00c6ff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
+.hero-buttons a:hover {
+    background: #0096c7;
+}
+
+.hero-img img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* SECTION */
 .section {
-    margin-top: 50px;
+    padding: 70px 60px;
 }
 
 .section h2 {
-    border-bottom: 1px solid #e1e4e8;
-    padding-bottom: 8px;
-    font-size: 22px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
 }
 
-.job {
-    margin-top: 25px;
+/* PROJECT CARDS */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
-.job h3 {
-    margin-bottom: 5px;
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
 }
 
-.job span {
-    color: #586069;
+/* SKILLS */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: #2c5364;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
     font-size: 14px;
 }
 
-.job ul {
-    margin-top: 10px;
-    padding-left: 20px;
-    font-size: 14px;
-}
-
-.skills-category {
-    margin-top: 20px;
-}
-
-.skills-category h4 {
-    margin-bottom: 8px;
-}
-
-.skills-category p {
-    font-size: 14px;
-    color: #24292e;
-}
-
-.footer {
-    margin-top: 60px;
+/* FOOTER */
+footer {
     text-align: center;
-    font-size: 13px;
-    color: #586069;
+    padding: 30px;
+    background: white;
+    font-size: 14px;
 }
 
-.footer a {
-    text-decoration: none;
-    color: #0366d6;
-    margin: 0 8px;
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+    .hero-img {
+        margin-top: 40px;
+    }
 }
-
 </style>
 </head>
+
 <body>
 
-<div class="container">
-
-<!-- HEADER -->
-<div class="header">
-    <img src="profile.jpg" alt="Chethana Govindaswamy Mani">
-    <div class="header-text">
-        <h1>Chethana Govindaswamy Mani</h1>
-        <h2>Digital Innovation & DevSecOps Engineer</h2>
-        <div class="username">@GMCHETHANA</div>
+<nav>
+    <div><strong>Chethana Govindaswamy Mani</strong></div>
+    <div>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
     </div>
-</div>
+</nav>
 
-<div class="bio">
-Master's graduate in Digital Innovation and Research with expertise in DevSecOps, Cloud Architecture, Kubernetes, and secure CI/CD pipelines. Experienced in building scalable, cost-optimized, and secure cloud-native systems. Strong research background in sustainable DevOps practices and automation-driven digital transformation.
-</div>
+<section class="hero">
+    <div class="hero-text">
+        <h1>DevOps & Cloud Engineer</h1>
+        <p>
+            DevOps-focused engineer with hands-on experience in Kubernetes, GitOps, CI/CD automation,
+            and Infrastructure as Code across AWS and Azure.
+            Passionate about building scalable, secure, and reliable cloud-native systems.
+        </p>
 
-<div class="quick-info">
-Austria • g.m.chethana97@gmail.com • +43 68120261450 • Master’s Graduate (Feb 2026)
-</div>
+        <div class="hero-buttons">
+            <a href="https://github.com/GMCHETHANA" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/chethana-govindaswamy-mani-5b6450163" target="_blank">LinkedIn</a>
+        </div>
+    </div>
 
-<!-- CAREER -->
-<div class="section">
-<h2>Chethana Govindaswamy Mani - Career Changelog</h2>
+    <div class="hero-img">
+        <img src="profile.jpg" alt="Chethana Govindaswamy Mani">
+    </div>
+</section>
 
-<div class="job">
-<h3>Master’s Research & Cloud Engineering Projects</h3>
-<span>September 2023 – February 2026</span>
-<ul>
-<li>🔐 Designed Zero-Trust DevSecOps pipelines integrating automated security scanning</li>
-<li>☁️ Developed cost-optimized cloud auto-scaling systems for performance efficiency</li>
-<li>⚙️ Implemented Kubernetes GitOps workflows for multi-environment deployments</li>
-<li>📊 Conducted sustainability-focused DevOps research for green software practices</li>
-<li>📈 Improved deployment reliability through Infrastructure as Code (Terraform)</li>
-</ul>
-</div>
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Multi-Environment Kubernetes GitOps</h3>
+            <p>Provisioned AWS EKS with Terraform and deployed applications using Argo CD GitOps workflows.</p>
+        </div>
 
-</div>
+        <div class="card">
+            <h3>Cost-Optimized Auto-Scaling System</h3>
+            <p>Implemented intelligent scaling using HPA, CronJobs, and workload-based resource modeling.</p>
+        </div>
 
-<!-- TECHNICAL SKILLS -->
-<div class="section">
-<h2>Technical Skills</h2>
+        <div class="card">
+            <h3>Zero-Trust DevSecOps Pipeline</h3>
+            <p>Integrated Trivy and OPA Gatekeeper into CI/CD for secure container deployment enforcement.</p>
+        </div>
+    </div>
+</section>
 
-<div class="skills-category">
-<h4>Programming Languages</h4>
-<p>Python Ruby JavaScript PHP Bash YAML</p>
-</div>
+<section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills-list">
+        <div class="skill">Kubernetes</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Terraform</div>
+        <div class="skill">GitOps</div>
+        <div class="skill">AWS</div>
+        <div class="skill">Azure</div>
+        <div class="skill">CI/CD</div>
+        <div class="skill">Linux</div>
+        <div class="skill">Bash</div>
+    </div>
+</section>
 
-<div class="skills-category">
-<h4>Database</h4>
-<p>PostgreSQL Redis MongoDB ElasticSearch RabbitMQ</p>
-</div>
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: g.m.chethana97@gmail.com</p>
+    <p>GitHub: github.com/GMCHETHANA</p>
+    <p>LinkedIn: linkedin.com/in/chethana-govindaswamy-mani-5b6450163</p>
+</section>
 
-<div class="skills-category">
-<h4>Frameworks</h4>
-<p>Django Flask React Laravel Vue Celery Sidekiq</p>
-</div>
-
-<div class="skills-category">
-<h4>Other Tools & Technologies</h4>
-<p>Git GitHub Actions Docker Kubernetes Terraform AWS Azure CI/CD Infrastructure as Code Unit Testing Monitoring Logging DevSecOps Security Scanning</p>
-</div>
-
-</div>
-
-<!-- EDUCATION -->
-<div class="section">
-<h2>Education</h2>
-
-<h3>Master’s in Digital Innovation and Research</h3>
-<p>University of Applied Sciences St. Pölten, Austria</p>
-<p>September 2023 – February 2026</p>
-
-</div>
-
-<!-- CONTACT -->
-<div class="section">
-<h2>Contact Information</h2>
-<p>📧 Email: g.m.chethana97@gmail.com</p>
-<p>🔗 LinkedIn: linkedin.com/in/chethana-govindaswamy-mani-5b6450163</p>
-<p>🐙 GitHub: github.com/GMCHETHANA</p>
-<p>📍 Location: Austria</p>
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-© 2026 Chethana Govindaswamy Mani • 
-<a href="#">Contact</a> • 
-<a href="#">Projects</a> • 
-<a href="#">Research</a>
-</div>
-
-</div>
+<footer>
+    © 2026 Chethana Govindaswamy Mani — DevOps Portfolio
+</footer>
 
 </body>
 </html>
